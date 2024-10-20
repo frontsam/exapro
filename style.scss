@@ -1,0 +1,29 @@
+$primary-color: #e60023;
+$secondary-color: #ffcccc;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+}
+
+section {
+  padding: 40px 0;
+  
+  &.bg-gray-200 {
+    background-color: $secondary-color;
+  }
+}

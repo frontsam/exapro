@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pärmar & Poesi - Din lokala bokhandel med evenemang och boknyheter.">
+    <meta name="keywords" content="bokhandel, evenemang, poesi, böcker">
+    <title>Pärmar & Poesi - Bokhandel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header & Navigation -->
+    <header class="bg-red-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Pärmar & Poesi</h1>
+            <nav>
+                <button id="menu-toggle" class="block md:hidden">☰</button>
+                <ul id="menu" class="hidden md:flex space-x-4">
+                    <li><a href="#" class="hover:underline">Hem</a></li>
+                    <li><a href="#evenemang" class="hover:underline">Evenemang</a></li>
+                    <li><a href="#nyheter" class="hover:underline">Nyheter</a></li>
+                    <li><a href="#kontakt" class="hover:underline">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Välkommen till Pärmar & Poesi</h2>
+            <p class="text-lg">Din lokala bokhandel med det senaste inom litteratur och poesi.</p>
+        </div>
+    </section>
+
+    <!-- Evenemang Section -->
+    <section id="evenemang" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Kommande Evenemang</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Poesikväll</h3>
+                    <p class="text-gray-700">En kväll med uppläsning av ny poesi. 24 oktober, kl 18:00.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Bokrelease</h3>
+                    <p class="text-gray-700">Fira lanseringen av den senaste romanen från lokala författare. 30 oktober, kl 17:00.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Författarmöte</h3>
+                    <p class="text-gray-700">Träffa och diskutera med populära författare. 5 november, kl 15:00.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nyheter Section -->
+    <section id="nyheter" class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Senaste Boknyheterna</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Ny Poesisamling</h3>
+                    <p class="text-gray-700">Upptäck den senaste poesin från skandinaviska författare.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Romanen "Höstvind"</h3>
+                    <p class="text-gray-700">Läs den kritikerrosade romanen som tar världen med storm.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Boktips: Novemberfavoriter</h3>
+                    <p class="text-gray-700">De bästa böckerna för höstmys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Kontakta Oss</h2>
+            <p class="text-gray-700 mb-6">Har du frågor eller vill veta mer om våra evenemang? Kontakta oss via e-post eller besök oss i butiken.</p>
+            <p class="text-gray-900 font-bold">Email: info@parmarpoesi.se</p>
+            <p class="text-gray-900 font-bold">Adress: Gata 123, 111 22 Stockholm</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Pärmar & Poesi. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
